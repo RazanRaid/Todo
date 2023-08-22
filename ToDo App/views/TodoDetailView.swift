@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct TodoDetailView: View {
+    
+    var selectedTimeBinding: Binding<Date> {
+            Binding<Date>(
+                get: { todo.selectedTime ?? Date() },
+                set: { todo.selectedTime = $0 }
+            )
+        }
+    
+    var selectedDateBinding: Binding<Date> {
+            Binding<Date>(
+                get: { todo.selectedDate ?? Date() },
+                set: { todo.selectedDate = $0 }
+            )
+        }
+    
     @Binding var todo : Todo
     var body: some View {
         Form{
@@ -31,8 +46,8 @@ struct TodoDetailView: View {
             
             }
             Section("Due Date"){
-                DatePicker("due date", selection: $todo.selectedDate
-                           , in: ...Date(), displayedComponents: .date)
+                DatePicker("due date", selection: selectedDateBinding
+                           , in: Date()..., displayedComponents: .date)
                                 .datePickerStyle(GraphicalDatePickerStyle())
                                 .labelsHidden()
                                 .padding()

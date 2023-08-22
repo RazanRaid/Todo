@@ -12,8 +12,8 @@ struct Todo: Identifiable, Codable {
     var title : String
     var isCompleted = false
     var subtitle = ""
-    var selectedDate = Date()
-    var selectedTime = Date()
+    var selectedDate : Date?
+    var selectedTime : Date?
     var priortise = false
 }
 
