@@ -20,14 +20,6 @@ struct TodoDetailView: View {
                         Text("Completed?")
                     }
                 }
-            
-            }
-            Section("Extra"){
-                DatePicker("due date", selection: $todo.selectedDate
-                           , in: ...Date(), displayedComponents: .date)
-                                .datePickerStyle(GraphicalDatePickerStyle())
-                                .labelsHidden()
-                                .padding()
                 Toggle(isOn: $todo.priortise) {
                     HStack{
                         Image(systemName: "calendar.badge.exclamationmark")
@@ -35,6 +27,15 @@ struct TodoDetailView: View {
                         
                     }
                 }
+
+            
+            }
+            Section("Due Date"){
+                DatePicker("due date", selection: $todo.selectedDate
+                           , in: ...Date(), displayedComponents: .date)
+                                .datePickerStyle(GraphicalDatePickerStyle())
+                                .labelsHidden()
+                                .padding()
             }
         }
         .navigationTitle("Todo Details")
