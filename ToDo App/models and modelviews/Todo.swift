@@ -13,11 +13,12 @@ struct Todo: Identifiable, Codable {
     var isCompleted = false
     var subtitle = ""
     var selectedDate = Date()
+    var selectedTime = Date()
     var priortise = false
 }
 
 func formatDate(date: Date) -> String {
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    dateFormatter.dateFormat = "dd MMMM yyyy"
     return dateFormatter.string(from: date)
 }
