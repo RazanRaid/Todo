@@ -51,6 +51,16 @@ struct TodoDetailView: View {
                                 .datePickerStyle(GraphicalDatePickerStyle())
                                 .labelsHidden()
                                 .padding()
+                
+                DatePicker(
+                                              "Select a time",
+                                              selection: selectedTimeBinding,
+                                              displayedComponents: .hourAndMinute
+                                          )
+                                          .datePickerStyle(.wheel)
+                                          .labelsHidden()
+                                          .padding()
+                                          .frame(height: 150)
             }
         }
         .navigationTitle("Todo Details")
