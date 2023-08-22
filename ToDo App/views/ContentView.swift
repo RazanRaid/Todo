@@ -34,13 +34,19 @@ struct ContentView: View {
                                     .font(.caption)
                                     .foregroundColor(.gray)
                                     .strikethrough( todo.isCompleted )
-                                
-                                if todo.selectedDate != nil {
-                                                                Text(formatDate(date: todo.selectedDate!))
-                                                                    .font(.caption)
-                                                                .foregroundColor(.gray)}
-                                    
                             }
+                            if todo.selectedDate != nil {
+                                                            Text(formatDate(date: todo.selectedDate!))
+                                                                .font(.caption)
+                                                            .foregroundColor(.gray)}
+                            
+                            if todo.selectedTime != nil {
+                                                        Text(formatTime(time: todo.selectedTime!))
+                                                            .font(.caption)
+                                                            .foregroundColor(.gray)
+                                                        
+                                                    }
+                            
                         }
                     }
                     
