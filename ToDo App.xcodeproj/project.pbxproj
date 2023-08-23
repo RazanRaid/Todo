@@ -14,6 +14,7 @@
 		C467C7342A9124C9007D5AF7 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467C7332A9124C9007D5AF7 /* Todo.swift */; };
 		C467C7362A914B4A007D5AF7 /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467C7352A914B4A007D5AF7 /* TodoDetailView.swift */; };
 		C467C7382A91B0C7007D5AF7 /* CreateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */; };
+		C4C65C212A9675CF0019383C /* Todo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C65C202A9675CF0019383C /* Todo+Sample.swift */; };
 		C4D2C9202A92B462008EF5CE /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2C91F2A92B462008EF5CE /* TodoManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		C467C7332A9124C9007D5AF7 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		C467C7352A914B4A007D5AF7 /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoView.swift; sourceTree = "<group>"; };
+		C4C65C202A9675CF0019383C /* Todo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Sample.swift"; sourceTree = "<group>"; };
 		C4D2C91F2A92B462008EF5CE /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			children = (
 				C467C7332A9124C9007D5AF7 /* Todo.swift */,
 				C4D2C91F2A92B462008EF5CE /* TodoManager.swift */,
+				C4C65C202A9675CF0019383C /* Todo+Sample.swift */,
 			);
 			path = "models and modelviews";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				C467C7282A912434007D5AF7 /* ContentView.swift in Sources */,
 				C4D2C9202A92B462008EF5CE /* TodoManager.swift in Sources */,
+				C4C65C212A9675CF0019383C /* Todo+Sample.swift in Sources */,
 				C467C7342A9124C9007D5AF7 /* Todo.swift in Sources */,
 				C467C7262A912434007D5AF7 /* ToDo_AppApp.swift in Sources */,
 				C467C7382A91B0C7007D5AF7 /* CreateTodoView.swift in Sources */,
