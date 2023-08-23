@@ -16,6 +16,8 @@
 		C467C7382A91B0C7007D5AF7 /* CreateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */; };
 		C4C65C212A9675CF0019383C /* Todo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C65C202A9675CF0019383C /* Todo+Sample.swift */; };
 		C4C65C232A9676420019383C /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C65C222A9676420019383C /* DateFunctions.swift */; };
+		C4C65C292A967A310019383C /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C65C282A967A310019383C /* MainTodoListView.swift */; };
+		C4C65C2B2A967BC10019383C /* HowManyMoreViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C65C2A2A967BC10019383C /* HowManyMoreViews.swift */; };
 		C4D2C9202A92B462008EF5CE /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2C91F2A92B462008EF5CE /* TodoManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoView.swift; sourceTree = "<group>"; };
 		C4C65C202A9675CF0019383C /* Todo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Sample.swift"; sourceTree = "<group>"; };
 		C4C65C222A9676420019383C /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
+		C4C65C282A967A310019383C /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
+		C4C65C2A2A967BC10019383C /* HowManyMoreViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyMoreViews.swift; sourceTree = "<group>"; };
 		C4D2C91F2A92B462008EF5CE /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				C467C7272A912434007D5AF7 /* ContentView.swift */,
+				C4C65C282A967A310019383C /* MainTodoListView.swift */,
 				C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */,
 				C467C7352A914B4A007D5AF7 /* TodoDetailView.swift */,
+				C4C65C2A2A967BC10019383C /* HowManyMoreViews.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				C4D2C9202A92B462008EF5CE /* TodoManager.swift in Sources */,
 				C4C65C212A9675CF0019383C /* Todo+Sample.swift in Sources */,
 				C467C7342A9124C9007D5AF7 /* Todo.swift in Sources */,
+				C4C65C292A967A310019383C /* MainTodoListView.swift in Sources */,
+				C4C65C2B2A967BC10019383C /* HowManyMoreViews.swift in Sources */,
 				C467C7262A912434007D5AF7 /* ToDo_AppApp.swift in Sources */,
 				C4C65C232A9676420019383C /* DateFunctions.swift in Sources */,
 				C467C7382A91B0C7007D5AF7 /* CreateTodoView.swift in Sources */,
