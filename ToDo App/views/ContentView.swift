@@ -68,13 +68,20 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                     }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button{
                        showSheet=true
                     }label: {
                         Image(systemName: "plus")
                     }
                     
+                    #if DEBUG
+                    Button{
+                        showSampleDataalert=true
+                    }label: {
+                        Image(systemName:"clipboard")
+                    }
+                    #endif
                 }
                 }
             .sheet(isPresented: $showSheet) {
