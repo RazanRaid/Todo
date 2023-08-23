@@ -26,12 +26,22 @@ struct ContentView: View {
                             }
                         Text(todo.priortise ? "‼️" : "")
                         VStack(alignment: .leading ){
-                            Text(todo.title)
-                                .strikethrough( todo.isCompleted )
+                            HStack{
+                                Text(todo.title)
+                                    .strikethrough( todo.isCompleted )
+                                .foregroundColor(todo.isOverdue ? .red : .primary)
+                                
+                                Text(todo.isOverdue ? "Overdue" : "")
+                                    .font(.caption)
+                                    .italic()
+                                    .foregroundColor(.red)
+                                    .opacity(0.6)
+                                
+                            }
                             
                             if !todo.subtitle.isEmpty {
                                 Text(todo.subtitle)
-                                    .font(.caption)
+                                    .font(.callout)
                                     .foregroundColor(.gray)
                                     .strikethrough( todo.isCompleted )
                             }

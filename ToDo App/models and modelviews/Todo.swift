@@ -15,6 +15,14 @@ struct Todo: Identifiable, Codable {
     var selectedDate : Date?
     var selectedTime : Date?
     var priortise = false
+    var isOverdue: Bool {
+        if let selectedDate = selectedDate {
+            let calendar = Calendar.current
+            let currentDate = calendar.startOfDay(for: Date())
+            return selectedDate  < currentDate
+        }
+        return false
+    }
 }
 
 func formatDate(date: Date) -> String {
