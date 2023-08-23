@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @StateObject var todoManager = TodoManager()
     @State private var showSheet = false
+    @State private var showSampleDataalert = false
     var body: some View {
         
         NavigationStack {
@@ -81,7 +82,11 @@ struct ContentView: View {
                     .presentationDetents([.medium])
                      .presentationDragIndicator(.visible)
             }
-
+            .alert("are you sure you want to load sample data? WARNING: this will eradicate ur previously made todos.", isPresented: $showSampleDataalert){
+                Button("load",role: .destructive){
+                    todoManager.loadSampleDate()
+                }
+            }
             }
             }
         }
