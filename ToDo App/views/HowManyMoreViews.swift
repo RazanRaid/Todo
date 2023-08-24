@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HowManyMoreViews: View {
+    
+    @ObservedObject var todoManager : TodoManager
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +18,6 @@ struct HowManyMoreViews: View {
 
 struct HowManyMoreViews_Previews: PreviewProvider {
     static var previews: some View {
-        HowManyMoreViews()
+        HowManyMoreViews(todoManager: TodoManager())
     }
 }

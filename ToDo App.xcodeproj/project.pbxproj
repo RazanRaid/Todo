@@ -89,9 +89,9 @@
 			children = (
 				C467C7272A912434007D5AF7 /* ContentView.swift */,
 				C4C65C282A967A310019383C /* MainTodoListView.swift */,
+				C4C65C2A2A967BC10019383C /* HowManyMoreViews.swift */,
 				C467C7372A91B0C7007D5AF7 /* CreateTodoView.swift */,
 				C467C7352A914B4A007D5AF7 /* TodoDetailView.swift */,
-				C4C65C2A2A967BC10019383C /* HowManyMoreViews.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
